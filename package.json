@@ -1,8 +1,8 @@
 {
-  "name": "vana-data-hero-bot",
+  "name": "VANADATAHERO BOT",
   "version": "1.0.0",
   "type": "module",
-  "description": "vana-data-hero-bot",
+  "description": "VANADATAHERO BOT",
   "main": "index.js",
   "scripts": {
     "start": "ncp accounts app/accounts && ncp config app/config && node app/index.js",
@@ -18,11 +18,11 @@
     "satori-vana",
     "vana-data-hero-game"
   ],
-  "author": "Widiskel",
+  "author": "Rambeboy",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Widiskel/vana-data-hero-bot.git"
+    "url": "git+https://github.com/Rambeboy/VANADATAHERO.git"
   },
   "dependencies": {
     "axios": "^1.7.7",
