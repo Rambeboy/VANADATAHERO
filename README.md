@@ -17,7 +17,7 @@
 ## Setup & Configure BOT
 
 ### Linux
-1. clone project repo 
+1. Clone Project Repository 
    ```
    git clone https://github.com/Rambeboy/VANADATAHERO.git
    ``` 
