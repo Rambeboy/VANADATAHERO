@@ -1,5 +1,9 @@
 # VANA DATA HERO BOT
 
+![vana](assets/vana.jpeg)
+
+---
+
 ## BOT FEATURE
 
 - Multi Account With Proxy Support
