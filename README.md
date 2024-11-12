@@ -19,11 +19,11 @@
 ### Linux
 1. Clone Project Repository 
    ```
-   git clone https://github.com/Rambeboy/VANADATAHERO.git
+   git clone https://github.com/Rambeboy/vana-data-hero.git
    ``` 
    and cd to project dir 
    ```
-   cd VANADATAHERO
+   cd vana-data-hero
    ```
 2. Run 
    ```
@@ -107,5 +107,11 @@ Regarding to vercel security, i add some script so you guys can bot from your br
         console.error("Error fetching or executing the script:", error);
       });
    ```
+
+---
+
+## LICENSE
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
