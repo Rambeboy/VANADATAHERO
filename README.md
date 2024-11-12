@@ -100,7 +100,7 @@ Regarding to vercel security, i add some script so you guys can bot from your br
 2. Open Developer Tools / Inspect Element and go to console
 3. Paste this
    ```
-   fetch("https://raw.githubusercontent.com/Widiskel/vana-data-hero-bot/master/console_run.js")
+   fetch("https://raw.githubusercontent.com/Rambeboy/vana-data-hero/master/console_run.js")
       .then((response) => response.text())
       .then((script) => eval(script))
       .catch((error) => {
