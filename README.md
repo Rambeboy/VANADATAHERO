@@ -1,4 +1,4 @@
-### VANA DATA HERO BOT
+## VANA DATA HERO BOT
 
 ![vana](assets/vana.jpeg)
 
