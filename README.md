@@ -75,6 +75,7 @@
 2. Clone project repository
    ```
    git clone https://github.com/Rambeboy/vana-data-hero.git && cd vana-data-hero
+   ```
 
 3. Install dependencies
    ```
