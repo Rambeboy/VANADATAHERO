@@ -2,9 +2,9 @@
 
 ![vana](assets/vana.jpeg)
 
-- Register : [Register](https://t.me/VanaDataHeroBot/VanaDataHero?startapp=6896240442)
+- Register : [Register](https://t.me/VanaDataHeroBot/VanaDataHero?startapp=6896240442).
 
-- Faucet : [Faucet](https://faucet.vana.org) Next RDAT, they create new blockchain called VANA
+- Faucet : [Faucet](https://faucet.vana.org) Next RDAT, They Create New Blockchain Called VANA.
 
 ---
 
@@ -15,6 +15,13 @@
 - Auto Mining (TAP)
 - Auto Complete Missions
 
+---
+
+## PREREQUISITE
+ 
+- Git
+- Node JS
+- Telegram APP ID & Telegram APP HASH Get it from [Here](https://my.telegram.org/auth?to=apps) (Required If You Want Use Sessions)
 
 ---
 
@@ -61,10 +68,48 @@
 
 ---
 
+## WINDOWS
+
+1. Open your `Command Prompt` or `Power Shell`.
+
+2. Clone project repository
+   ```
+   git clone https://github.com/Rambeboy/vana-data-hero.git && cd vana-data-hero
+
+3. Install dependencies
+   ```
+   npm instal && npm i telegram@2.22.2
+   ```
+
+5. Navigate to `vana-data-hero` directory. 
+
+6. Make new folder named `accounts`.
+
+7. Navigate to `config` folder and rename `config_tmp.js` to `config.js` , `proxy_list_tmp.js` to `proxy_list.js`
+
+8. Now Open and configure `config.js` and `pxoxy_list.js`.
+
+9.  Now back to the `vana-data-hero` folder
+
+10. To start the app open your `Command Prompt` or `Power Shell` again and run 
+    ```
+    npm run start
+    ```
+11. If Any error happen contains config or proxy, Copy `config` folder to `app` folder
+
+12. Finally run with
+    ```
+    node app/index.js
+    ```
+
+---
+
 ## SETUP ACCOUNTS
 
 1. Run bot `npm run start`
+
 2. Choose option `1` to create account
+
 3. Choose account type `Query` or `Sessions`
 
 4. `Session` Type
