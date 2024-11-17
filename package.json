@@ -22,7 +22,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rambeboy/vana-data-hero-bot.git"
+    "url": "git+https://github.com/Rambeboy/vana-data-hero.git"
   },
   "dependencies": {
     "axios": "^1.7.7",
