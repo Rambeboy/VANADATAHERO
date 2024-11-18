@@ -1,1 +1,43 @@
-const _0x7eb73e=_0x4254;(function(_0x5de538,_0x37ac19){const _0x14df3d=_0x4254,_0x45d333=_0x5de538();while(!![]){try{const _0x1cb169=parseInt(_0x14df3d(0x1a5))/0x1*(parseInt(_0x14df3d(0x1bb))/0x2)+parseInt(_0x14df3d(0x19d))/0x3+parseInt(_0x14df3d(0x1b8))/0x4+-parseInt(_0x14df3d(0x1b9))/0x5*(-parseInt(_0x14df3d(0x1a1))/0x6)+parseInt(_0x14df3d(0x1b3))/0x7+parseInt(_0x14df3d(0x1a9))/0x8*(-parseInt(_0x14df3d(0x1a2))/0x9)+parseInt(_0x14df3d(0x1b7))/0xa*(-parseInt(_0x14df3d(0x1af))/0xb);if(_0x1cb169===_0x37ac19)break;else _0x45d333['push'](_0x45d333['shift']());}catch(_0xa08209){_0x45d333['push'](_0x45d333['shift']());}}}(_0x567d,0x89c1c));function _0x4254(_0x498a3a,_0xc47ee9){const _0x567d99=_0x567d();return _0x4254=function(_0x4254e0,_0x377a9){_0x4254e0=_0x4254e0-0x19d;let _0x213e9c=_0x567d99[_0x4254e0];return _0x213e9c;},_0x4254(_0x498a3a,_0xc47ee9);}import{Twisters}from'twisters';import _0x1a145c from'./logger.js';function _0x567d(){const _0xa1ba24=['clearInfo','\x0a==============================================','length','\x0a=================\x20Account\x20','twisters','55HZiNpG','\x20-\x20','completed','info','4947075vOMRhb','remove','\x0a==================================================','user','3302120CzlSTJ','1552624efdhgc','1090590JbORGF','log','37778QGjHzK','tasks','1584375bXHizA','clear','filter','\x0a==============================================\x0aInfo\x20:\x20','18DnuOxU','1573695fgtulU','flush','\x20=============\x0a','43aeSCXk','put','spinnerContent','points','40XwuxQb'];_0x567d=function(){return _0xa1ba24;};return _0x567d();}import{Core}from'../core/core.js';import{Helper}from'./helper.js';export class Twist{constructor(){const _0x46d46a=_0x4254;this[_0x46d46a(0x1ae)]=new Twisters();}[_0x7eb73e(0x1ba)](_0x27e631='',_0x12d9ce='',_0x4efe73=new Core(),_0x2bbcf9){const _0xa69e71=_0x7eb73e;_0x2bbcf9==undefined&&(_0x1a145c['info'](_0x12d9ce['id']+_0xa69e71(0x1b0)+_0x27e631),_0x2bbcf9='-');const _0x4bee42=_0x4efe73[_0xa69e71(0x1b6)]??{},_0x2e3042=_0x4bee42[_0xa69e71(0x1a8)]??'-',_0x4a8b89=_0x4efe73[_0xa69e71(0x1bc)]??[],_0xf411f8=_0x4a8b89[_0xa69e71(0x1ac)]??'-',_0x8da5be=_0x4a8b89[_0xa69e71(0x19f)](_0x13fa1b=>_0x13fa1b[_0xa69e71(0x1b1)][_0xa69e71(0x1ac)]!=0x0)[_0xa69e71(0x1ac)]??'-';let _0x571bf4={'msg':_0x27e631,'delay':_0x2bbcf9,'acc':_0x12d9ce,'points':_0x2e3042,'availableTask':_0xf411f8,'completedTask':_0x8da5be};this[_0xa69e71(0x1ae)][_0xa69e71(0x1a6)](_0x12d9ce['id'],{'text':_0xa69e71(0x1ad)+_0x12d9ce['id']+_0xa69e71(0x1a4)+Helper[_0xa69e71(0x1a7)](_0x571bf4)+_0xa69e71(0x1ab)});}[_0x7eb73e(0x1b2)](_0x4cc9f0=''){const _0x1f40ba=_0x7eb73e;this[_0x1f40ba(0x1ae)]['put'](0x2,{'text':_0x1f40ba(0x1a0)+_0x4cc9f0+_0x1f40ba(0x1b5)});return;}[_0x7eb73e(0x1aa)](){const _0x1fa7e1=_0x7eb73e;this[_0x1fa7e1(0x1ae)][_0x1fa7e1(0x1b4)](0x2);}async[_0x7eb73e(0x19e)](_0x10895c){const _0xa6899a=_0x7eb73e;await this[_0xa6899a(0x1ae)][_0xa6899a(0x1a3)]();}}
+import { Twisters } from 'twisters';
+import _0x1a145c from './logger.js';
+import { Core } from '../core/core.js';
+import { Helper } from './helper.js';
+export class Twist {
+  constructor() {
+    this.twisters = new Twisters();
+  }
+  ["log"](_0x27e631 = '', _0x12d9ce = '', _0x4efe73 = new Core(), _0x2bbcf9) {
+    if (_0x2bbcf9 == undefined) {
+      _0x1a145c.info(_0x12d9ce.id + " - " + _0x27e631);
+      _0x2bbcf9 = '-';
+    }
+    const _0x4bee42 = _0x4efe73.user ?? {};
+    const _0x2e3042 = _0x4bee42.points ?? '-';
+    const _0x4a8b89 = _0x4efe73.tasks ?? [];
+    const _0xf411f8 = _0x4a8b89.length ?? '-';
+    const _0x8da5be = _0x4a8b89.filter(_0x13fa1b => _0x13fa1b.completed.length != 0x0).length ?? '-';
+    let _0x571bf4 = {
+      'msg': _0x27e631,
+      'delay': _0x2bbcf9,
+      'acc': _0x12d9ce,
+      'points': _0x2e3042,
+      'availableTask': _0xf411f8,
+      'completedTask': _0x8da5be
+    };
+    this.twisters.put(_0x12d9ce.id, {
+      'text': "\n================= Account " + _0x12d9ce.id + " =============\n" + Helper.spinnerContent(_0x571bf4) + "\n=============================================="
+    });
+  }
+  ["info"](_0x4cc9f0 = '') {
+    this.twisters.put(0x2, {
+      'text': "\n==============================================\nInfo : " + _0x4cc9f0 + "\n=============================================="
+    });
+    return;
+  }
+  ["clearInfo"]() {
+    this.twisters.remove(0x2);
+  }
+  async ["clear"](_0x10895c) {
+    await this.twisters.flush();
+  }
+}
