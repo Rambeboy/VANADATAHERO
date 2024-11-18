@@ -1,1 +1,43 @@
-function _0x1e89(_0x174f47,_0x2ce2d8){const _0x3b8422=_0x3b84();return _0x1e89=function(_0x1e89b1,_0x54d6cb){_0x1e89b1=_0x1e89b1-0xa4;let _0x4b56db=_0x3b8422[_0x1e89b1];return _0x4b56db;},_0x1e89(_0x174f47,_0x2ce2d8);}const _0xcbc046=_0x1e89;(function(_0x4dcb3f,_0x19ec59){const _0x1731ac=_0x1e89,_0x4c78f3=_0x4dcb3f();while(!![]){try{const _0x403e95=-parseInt(_0x1731ac(0xb5))/0x1*(-parseInt(_0x1731ac(0xbc))/0x2)+parseInt(_0x1731ac(0xae))/0x3*(-parseInt(_0x1731ac(0xac))/0x4)+-parseInt(_0x1731ac(0xaa))/0x5+-parseInt(_0x1731ac(0xa8))/0x6+parseInt(_0x1731ac(0xb6))/0x7*(-parseInt(_0x1731ac(0xbb))/0x8)+parseInt(_0x1731ac(0xb4))/0x9*(parseInt(_0x1731ac(0xbd))/0xa)+parseInt(_0x1731ac(0xbf))/0xb*(-parseInt(_0x1731ac(0xab))/0xc);if(_0x403e95===_0x19ec59)break;else _0x4c78f3['push'](_0x4c78f3['shift']());}catch(_0x398cd0){_0x4c78f3['push'](_0x4c78f3['shift']());}}}(_0x3b84,0x552f9));function _0x3b84(){const _0x3832a9=['36vTaiIX','256sWCWEF','49UGAEWm','info','\x0a==================================================\x0aInfo\x20:\x20','length','twisters','202544jhjGlM','3974UvYVym','1522730njBscz','clear','11XhJFOt','spinnerContent','completed','\x20=============\x0a','remove','1836114BOHWnh','filter','740300flazvQ','1451028LDcnDa','4gkNFaX','points','49857SbZgqn','tasks','flush','user','clearInfo','put'];_0x3b84=function(){return _0x3832a9;};return _0x3b84();}import{Twisters}from'twisters';import _0x1d0c74 from'./logger.js';import{Core}from'../core/core.js';import{Helper}from'./helper.js';export class Twist{constructor(){const _0xc186eb=_0x1e89;this[_0xc186eb(0xba)]=new Twisters();}['log'](_0x42bec9='',_0x1d695d='',_0x4fdbd3=new Core(),_0x19f853){const _0x333d44=_0x1e89;_0x19f853==undefined&&(_0x1d0c74[_0x333d44(0xb7)](_0x1d695d['id']+'\x20-\x20'+_0x42bec9),_0x19f853='-');const _0x5ed601=_0x4fdbd3[_0x333d44(0xb1)]??{},_0x40f05a=_0x5ed601[_0x333d44(0xad)]??'-',_0x2b0ce8=_0x4fdbd3[_0x333d44(0xaf)]??[],_0x4b360e=_0x2b0ce8[_0x333d44(0xb9)]??'-',_0x222927=_0x2b0ce8[_0x333d44(0xa9)](_0xb7d6e1=>_0xb7d6e1[_0x333d44(0xa5)][_0x333d44(0xb9)]!=0x0)[_0x333d44(0xb9)]??'-';let _0x1f0b37={'msg':_0x42bec9,'delay':_0x19f853,'acc':_0x1d695d,'points':_0x40f05a,'availableTask':_0x4b360e,'completedTask':_0x222927};this[_0x333d44(0xba)][_0x333d44(0xb3)](_0x1d695d['id'],{'text':'\x0a=================\x20Account\x20'+_0x1d695d['id']+_0x333d44(0xa6)+Helper[_0x333d44(0xa4)](_0x1f0b37)+'\x0a=============================================='});}[_0xcbc046(0xb7)](_0x261127=''){const _0x487cdd=_0xcbc046;this['twisters']['put'](0x2,{'text':_0x487cdd(0xb8)+_0x261127+'\x0a=================================================='});return;}[_0xcbc046(0xb2)](){const _0x726a49=_0xcbc046;this[_0x726a49(0xba)][_0x726a49(0xa7)](0x2);}async[_0xcbc046(0xbe)](_0x2ae9a3){const _0x21b94d=_0xcbc046;await this[_0x21b94d(0xba)][_0x21b94d(0xb0)]();}}
+import { Twisters } from 'twisters';
+import _0x1d0c74 from './logger.js';
+import { Core } from '../core/core.js';
+import { Helper } from './helper.js';
+export class Twist {
+  constructor() {
+    this.twisters = new Twisters();
+  }
+  ['log'](_0x42bec9 = '', _0x1d695d = '', _0x4fdbd3 = new Core(), _0x19f853) {
+    if (_0x19f853 == undefined) {
+      _0x1d0c74.info(_0x1d695d.id + " - " + _0x42bec9);
+      _0x19f853 = '-';
+    }
+    const _0x5ed601 = _0x4fdbd3.user ?? {};
+    const _0x40f05a = _0x5ed601.points ?? '-';
+    const _0x2b0ce8 = _0x4fdbd3.tasks ?? [];
+    const _0x4b360e = _0x2b0ce8.length ?? '-';
+    const _0x222927 = _0x2b0ce8.filter(_0xb7d6e1 => _0xb7d6e1.completed.length != 0x0).length ?? '-';
+    let _0x1f0b37 = {
+      'msg': _0x42bec9,
+      'delay': _0x19f853,
+      'acc': _0x1d695d,
+      'points': _0x40f05a,
+      'availableTask': _0x4b360e,
+      'completedTask': _0x222927
+    };
+    this.twisters.put(_0x1d695d.id, {
+      'text': "\n================= Account " + _0x1d695d.id + " =============\n" + Helper.spinnerContent(_0x1f0b37) + "\n=============================================="
+    });
+  }
+  ["info"](_0x261127 = '') {
+    this.twisters.put(0x2, {
+      'text': "\n==================================================\nInfo : " + _0x261127 + "\n========================================================================"
+    });
+    return;
+  }
+  ["clearInfo"]() {
+    this.twisters.remove(0x2);
+  }
+  async ["clear"](_0x2ae9a3) {
+    await this.twisters.flush();
+  }
+}
