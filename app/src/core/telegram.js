@@ -1,1 +1,245 @@
-const _0x2e68e0=_0x5cf4;(function(_0x3332a2,_0x332906){const _0x8745e9=_0x5cf4,_0x4350f5=_0x3332a2();while(!![]){try{const _0x470dc3=-parseInt(_0x8745e9(0x21f))/0x1+-parseInt(_0x8745e9(0x21d))/0x2+parseInt(_0x8745e9(0x236))/0x3*(parseInt(_0x8745e9(0x203))/0x4)+-parseInt(_0x8745e9(0x200))/0x5+parseInt(_0x8745e9(0x237))/0x6+parseInt(_0x8745e9(0x1ff))/0x7+parseInt(_0x8745e9(0x1f2))/0x8;if(_0x470dc3===_0x332906)break;else _0x4350f5['push'](_0x4350f5['shift']());}catch(_0x15d1d3){_0x4350f5['push'](_0x4350f5['shift']());}}}(_0x40ab,0x462e3));function _0x5cf4(_0x412dff,_0x1c6c1b){const _0x40ab74=_0x40ab();return _0x5cf4=function(_0x5cf4d1,_0x2d86bb){_0x5cf4d1=_0x5cf4d1-0x1ee;let _0x789a74=_0x40ab74[_0x5cf4d1];return _0x789a74;},_0x5cf4(_0x412dff,_0x1c6c1b);}import _0x5c5374 from'input';import{Helper}from'../utils/helper.js';import{Api,TelegramClient}from'telegram';import{StoreSession}from'telegram/sessions/StoreSession.js';import _0x761eb8 from'../utils/logger.js';function _0x40ab(){const _0x19b94e=['\x0a\x20\x0aYou\x20already\x20have\x20sessions,\x20cancel(CTRL+C)\x20or\x20create\x20new\x20Session\x20:','seconds','accountType','<empty>','\x20-\x20Resolving\x20Peer','Session\x20','error','accounts','log','sessions-','https://www.vanadatahero.com/challenges','setLogLevel','668310GMTxOn','3093678uTsXBP','/query.txt','onBoarding','<empty>\x0a','queryCreation','android','Query\x20','sessionCreation','storeSession','query','session','You\x20dont\x20have\x20any\x20Query\x20Account.','queryModificaiton','125984wLYlTe','query-','\x0a\x20\x0aPlease\x20Select\x20Query\x20Account\x20for\x20modification:','client','Enter\x20your\x20Telegram\x20Verification\x20Code\x20?','InputBotAppShortName','\x20-\x20Created','Please\x20configure\x20your\x20TELEGRAM_APP_ID\x20and\x20TELEGRAM_APP_HASH\x20first','exit','indexOf','proxy','\x0a\x20\x0aYou\x20already\x20have\x20Account,\x20cancel(CTRL+C)\x20or\x20create\x20new\x20Account\x20:','message','1271291qSmzzl','362865qYyJwO','Invalid\x20input,\x20Please\x20try\x20again','Your\x20Account\x20List\x20:\x0a\x20\x0a','4FgGqGD','url','\x0a\x20\x0a1.\x20Create\x20Account\x20\x0a2.\x20Reset\x20Account\x20\x0a3.\x20Start\x20Bot\x0a4.\x20Query\x20modification\x0a\x20\x0aInput\x20your\x20choice\x20:','length','ERROR','bot','messages','TELEGRAM_APP_ID','includes','TELEGRAM_APP_HASH','peer','<empty>\x20\x0a\x20\x0aPlease\x20enter\x20Account\x20Name\x20:','Old\x20Query\x20:\x20','resolvePeer','Invalid\x20Input','getQueryFromUrl','\x20|\x20Sleep\x20','stringify','info','warn','\x20-\x20Created,\x20Please\x20Restart\x20The\x20Bot\x20Again','disconnect','readQueryFile','serverAddress','\x20-\x20Webview\x20Connected','initWebView','342670BLrKYk','<empty>\x20\x0a\x20\x0aPlease\x20enter\x20Session\x20Name\x20:','404377vgoUHV','accountName','\x20|\x20FloodWait\x20','getSession','agent','\x0a\x20\x0aPlease\x20Choose\x20a\x20menu:\x20\x0a','text','destroy','delay','You\x20don\x27t\x20have\x20any\x20Accounts,\x20please\x20create\x20first','useSession'];_0x40ab=function(){return _0x19b94e;};return _0x40ab();}import{FloodWaitError}from'telegram/errors/RPCErrorList.js';import{Config}from'../../config/config.js';import{HttpsProxyAgent}from'https-proxy-agent';import{LogLevel}from'telegram/extensions/Logger.js';export class Telegram{[_0x2e68e0(0x23f)];constructor(){const _0x33c1fb=_0x2e68e0;this[_0x33c1fb(0x220)]=_0x33c1fb(0x231),this[_0x33c1fb(0x204)]=_0x33c1fb(0x234),this[_0x33c1fb(0x208)]='VanaDataHeroBot';}async['init'](){const _0x5b8e2c=_0x2e68e0;try{await this[_0x5b8e2c(0x239)]();}catch(_0x56c712){console[_0x5b8e2c(0x232)](_0x56c712),_0x761eb8[_0x5b8e2c(0x230)](''+JSON[_0x5b8e2c(0x214)](_0x56c712));throw _0x56c712;}}async['onBoarding'](){const _0x4923b6=_0x2e68e0;try{let _0x4e8027='Welcome\x20to\x20Bot\x0a\x20\x0aBy\x20:\x20Nofan\x20Rambe\x0a\x20\x0aLet\x27s\x20Getting\x20Started\x0a\x20\x0aYour\x20Session\x20List:\x0a';const _0x17c32d=Helper[_0x4923b6(0x222)](_0x4923b6(0x231));if(_0x17c32d[_0x4923b6(0x206)]==0x0)_0x4e8027+=_0x4923b6(0x22d);else for(const _0x3e6475 of _0x17c32d){_0x4e8027+='-\x20'+_0x3e6475+'\x0a';}_0x4e8027+=_0x4923b6(0x224),_0x4e8027+=_0x4923b6(0x205);const _0x9a9993=await _0x5c5374['text'](_0x4e8027);if(_0x9a9993==0x1)await this[_0x4923b6(0x22c)]();else{if(_0x9a9993==0x2)Helper['resetAccounts'](),await Helper[_0x4923b6(0x227)](0xbb8),await this['onBoarding']();else{if(_0x9a9993==0x3)Helper[_0x4923b6(0x222)](this[_0x4923b6(0x220)])?.[_0x4923b6(0x206)]==0x0&&(console['info'](_0x4923b6(0x228)),await this['onBoarding']());else _0x9a9993==0x4?await this[_0x4923b6(0x1f1)]():(console[_0x4923b6(0x230)](_0x4923b6(0x201)),await this[_0x4923b6(0x239)]());}}}catch(_0x2ce0ea){throw _0x2ce0ea;}}async['queryModificaiton'](){const _0x204bb6=_0x2e68e0;try{const _0x1730a2=Helper[_0x204bb6(0x222)]('accounts'),_0x4e9d3e=_0x1730a2['filter'](_0x550815=>_0x550815[_0x204bb6(0x20b)](_0x204bb6(0x1ee)));let _0x14120f='Your\x20Query\x20Account\x20List\x20:\x0a\x20\x0a';for(const _0x2df1eb of _0x4e9d3e){_0x14120f+=_0x1730a2['indexOf'](_0x2df1eb)+0x1+'.\x20'+_0x2df1eb+'\x0a';}_0x4e9d3e[_0x204bb6(0x206)]==0x0?(console['log'](_0x204bb6(0x1f0)),await this[_0x204bb6(0x239)]()):_0x14120f+=_0x204bb6(0x1f4);const _0xed51fa=await _0x5c5374[_0x204bb6(0x225)](_0x14120f);if(_0x4e9d3e[_0xed51fa-0x1]!=undefined){const _0x856c00=_0x4e9d3e[_0xed51fa-0x1];this['accountName']='accounts/'+_0x856c00;const _0xa4b877=_0x204bb6(0x20f)+Helper[_0x204bb6(0x219)](this['accountName']+_0x204bb6(0x238))+'\x0a\x20\x0aPlease\x20Enter\x20New\x20Query\x20',_0x1c2eb9=await _0x5c5374['text'](_0xa4b877);await Helper['saveQueryFile'](this[_0x204bb6(0x220)],_0x1c2eb9),await Helper[_0x204bb6(0x227)](0xbb8),await this[_0x204bb6(0x239)]();}else console[_0x204bb6(0x230)](_0x204bb6(0x201)),await this[_0x204bb6(0x1f1)]();}catch(_0x21ea65){throw _0x21ea65;}}async[_0x2e68e0(0x23e)](){const _0x88a177=_0x2e68e0;try{if(Config[_0x88a177(0x20a)]==undefined||Config['TELEGRAM_APP_HASH']==undefined)throw new Error(_0x88a177(0x1f9));const _0x43fd30=Helper[_0x88a177(0x222)](_0x88a177(0x231));let _0x53d3ee='Your\x20Account\x20List\x20:\x0a\x20\x0a';for(const _0x5def9b of _0x43fd30){_0x53d3ee+=_0x43fd30[_0x88a177(0x1fb)](_0x5def9b)+0x1+'.\x20'+_0x5def9b+'\x0a';}_0x43fd30[_0x88a177(0x206)]==0x0?_0x53d3ee+=_0x88a177(0x21e):_0x53d3ee+=_0x88a177(0x22a);const _0x1f5acb=await _0x5c5374['text'](_0x53d3ee);this[_0x88a177(0x220)]=Helper['createDir'](_0x88a177(0x233)+_0x1f5acb),await this['useSession'](this['accountName']),await this['disconnect'](),_0x761eb8['info']('Session\x20'+this['accountName']+_0x88a177(0x1f8)),console[_0x88a177(0x232)](_0x88a177(0x22f)+_0x1f5acb+'\x20-\x20Created,\x20Please\x20Restart\x20The\x20Bot\x20Again'),this[_0x88a177(0x23f)]['save'](),await Helper[_0x88a177(0x227)](0xbb8),process[_0x88a177(0x1fa)]();}catch(_0x4247ed){throw _0x4247ed;}}async[_0x2e68e0(0x23b)](){const _0x36298a=_0x2e68e0;try{const _0x5c16e6=Helper[_0x36298a(0x222)](_0x36298a(0x231));let _0x3184be=_0x36298a(0x202);for(const _0x3689bb of _0x5c16e6){_0x3184be+=_0x5c16e6[_0x36298a(0x1fb)](_0x3689bb)+0x1+'.\x20'+_0x3689bb+'\x0a';}_0x5c16e6[_0x36298a(0x206)]==0x0?_0x3184be+=_0x36298a(0x20e):_0x3184be+=_0x36298a(0x1fd);const _0x1580db=await _0x5c5374[_0x36298a(0x225)](_0x3184be);this[_0x36298a(0x220)]=Helper['createDir'](_0x36298a(0x1f3)+_0x1580db);const _0x53ca0f=await _0x5c5374[_0x36298a(0x225)]('Please\x20Enter\x20Telegram\x20Query\x20:\x20');await Helper['saveQueryFile'](this['accountName'],_0x53ca0f),_0x761eb8[_0x36298a(0x215)](_0x36298a(0x23d)+this[_0x36298a(0x220)]+_0x36298a(0x1f8)),console[_0x36298a(0x232)](_0x36298a(0x23d)+_0x1580db+_0x36298a(0x217)),await Helper[_0x36298a(0x227)](0xbb8),process[_0x36298a(0x1fa)]();}catch(_0x19465e){throw _0x19465e;}}async['accountType'](){const _0x4abee8=_0x2e68e0;try{const _0x59a2cd=Helper[_0x4abee8(0x222)]('accounts');let _0x590a0b='Your\x20Account\x20List\x20:\x0a\x20\x0a';if(_0x59a2cd[_0x4abee8(0x206)]>0x0)for(const _0x1f6ce4 of _0x59a2cd){_0x590a0b+=_0x59a2cd[_0x4abee8(0x1fb)](_0x1f6ce4)+0x1+'.\x20'+_0x1f6ce4+'\x0a';}else _0x590a0b+=_0x4abee8(0x23a);_0x590a0b+='\x0a\x20\x0aAvailable\x20Account\x20Type:\x20\x0a1.\x20Session\x20\x0a2.\x20Query\x0a\x20\x0aPlease\x20Entery\x20Your\x20Choice\x20:\x20';const _0x100fac=await _0x5c5374[_0x4abee8(0x225)](_0x590a0b);if(_0x100fac==0x1)await this[_0x4abee8(0x23e)]();else _0x100fac==0x2?await this['queryCreation']():(console[_0x4abee8(0x232)](_0x4abee8(0x211)),await this[_0x4abee8(0x22c)]());}catch(_0x3d2229){throw _0x3d2229;}}async[_0x2e68e0(0x229)](_0xe5669c,_0x16b305){const _0x5b7a4a=_0x2e68e0;try{this['proxy']=_0x16b305;const _0x196e2e={'connectionRetries':0x5};this['proxy']&&(_0x196e2e[_0x5b7a4a(0x223)]=new HttpsProxyAgent(this[_0x5b7a4a(0x1fc)])),this[_0x5b7a4a(0x23f)]=new StoreSession(_0xe5669c),this[_0x5b7a4a(0x1f5)]=new TelegramClient(this[_0x5b7a4a(0x23f)],Config['TELEGRAM_APP_ID'],Config[_0x5b7a4a(0x20c)],_0x196e2e),this[_0x5b7a4a(0x1f5)][_0x5b7a4a(0x235)](LogLevel[_0x5b7a4a(0x207)]),this[_0x5b7a4a(0x23f)]['save'](),await this['client']['start']({'phoneNumber':async()=>await _0x5c5374[_0x5b7a4a(0x225)]('Enter\x20your\x20Telegram\x20Phone\x20Number\x20?'),'password':async()=>await _0x5c5374[_0x5b7a4a(0x225)]('Enter\x20your\x20Telegram\x20Password?'),'phoneCode':async()=>await _0x5c5374['text'](_0x5b7a4a(0x1f6)),'onError':_0x112eff=>{const _0x2b070c=_0x5b7a4a;console[_0x2b070c(0x232)](_0x112eff[_0x2b070c(0x1fe)]);}});}catch(_0x59c7fa){throw _0x59c7fa;}}async[_0x2e68e0(0x210)](_0x23142b){const _0x1a0177=_0x2e68e0;try{_0x761eb8[_0x1a0177(0x215)](_0x1a0177(0x22f)+this[_0x1a0177(0x1ef)]+_0x1a0177(0x22e));while(this['peer']==undefined){try{this[_0x1a0177(0x20d)]=await this[_0x1a0177(0x1f5)]['getEntity'](this['bot']);break;}catch(_0x279d70){if(_0x279d70 instanceof FloodWaitError){const _0x4ed025=_0x279d70[_0x1a0177(0x22b)];_0x761eb8[_0x1a0177(0x216)](this['client']['session'][_0x1a0177(0x21a)]+_0x1a0177(0x221)+_0x279d70),_0x761eb8[_0x1a0177(0x215)](this[_0x1a0177(0x1f5)][_0x1a0177(0x1ef)][_0x1a0177(0x21a)]+_0x1a0177(0x213)+_0x4ed025+'s'),await Helper[_0x1a0177(0x227)](_0x4ed025*0x3e8,_0x23142b,this[_0x1a0177(0x1f5)][_0x1a0177(0x1ef)][_0x1a0177(0x21a)]+'\x20|\x20FloodWait\x20'+_0x279d70);}else throw _0x279d70;}}}catch(_0x22254f){throw _0x22254f;}}async[_0x2e68e0(0x218)](){const _0x53f1a9=_0x2e68e0;await this[_0x53f1a9(0x1f5)][_0x53f1a9(0x218)](),await this[_0x53f1a9(0x1f5)][_0x53f1a9(0x226)](),this[_0x53f1a9(0x20d)]=undefined,this[_0x53f1a9(0x220)]=undefined;}async[_0x2e68e0(0x21c)](_0x3c5f6a){const _0x1712ec=_0x2e68e0;try{const _0x382266=await this[_0x1712ec(0x1f5)]['invoke'](new Api[(_0x1712ec(0x209))]['RequestAppWebView']({'peer':this[_0x1712ec(0x208)],'app':new Api[(_0x1712ec(0x1f7))]({'botId':await this[_0x1712ec(0x1f5)]['getInputEntity'](this[_0x1712ec(0x208)]),'shortName':'VanaDataHero'}),'writeAllowed':!![],'platform':_0x1712ec(0x23c),'startParam':Helper['creator'],'compact':!![]}));return _0x761eb8[_0x1712ec(0x215)](_0x1712ec(0x22f)+this[_0x1712ec(0x1ef)]+_0x1712ec(0x21b)),Helper[_0x1712ec(0x212)](_0x382266[_0x1712ec(0x204)]);}catch(_0x670280){throw _0x670280;}}}
+import _0x5c5374 from 'input';
+import { Helper } from '../utils/helper.js';
+import { Api, TelegramClient } from 'telegram';
+import { StoreSession } from 'telegram/sessions/StoreSession.js';
+import _0x761eb8 from '../utils/logger.js';
+import { FloodWaitError } from 'telegram/errors/RPCErrorList.js';
+import { Config } from '../../config/config.js';
+import { HttpsProxyAgent } from 'https-proxy-agent';
+import { LogLevel } from 'telegram/extensions/Logger.js';
+export class Telegram {
+  ["storeSession"];
+  constructor() {
+    this.accountName = "accounts";
+    this.url = "https://www.vanadatahero.com/challenges";
+    this.bot = 'VanaDataHeroBot';
+  }
+  async ['init']() {
+    try {
+      await this.onBoarding();
+    } catch (_0x56c712) {
+      console.log(_0x56c712);
+      _0x761eb8.error('' + JSON.stringify(_0x56c712));
+      throw _0x56c712;
+    }
+  }
+  async ['onBoarding']() {
+    try {
+      let _0x4e8027 = "Welcome to Bot\n\nBy : Nofan Rambe\n \nLet's Getting Started\n \nYour Session List:\n";
+      const _0x17c32d = Helper.getSession("accounts");
+      if (_0x17c32d.length == 0x0) {
+        _0x4e8027 += "<empty>";
+      } else {
+        for (const _0x3e6475 of _0x17c32d) {
+          _0x4e8027 += "- " + _0x3e6475 + "\n";
+        }
+      }
+      _0x4e8027 += "\n \nPlease Choose a menu: \n";
+      _0x4e8027 += "\n \n1. Create Account \n2. Reset Account \n3. Start Bot\n4. Query modification\n \nInput your choice :";
+      const _0x9a9993 = await _0x5c5374.text(_0x4e8027);
+      if (_0x9a9993 == 0x1) {
+        await this.accountType();
+      } else {
+        if (_0x9a9993 == 0x2) {
+          Helper.resetAccounts();
+          await Helper.delay(0xbb8);
+          await this.onBoarding();
+        } else {
+          if (_0x9a9993 == 0x3) {
+            if (Helper.getSession(this.accountName)?.["length"] == 0x0) {
+              console.info("You don't have any Accounts, please create first");
+              await this.onBoarding();
+            }
+          } else if (_0x9a9993 == 0x4) {
+            await this.queryModificaiton();
+          } else {
+            console.error("Invalid input, Please try again");
+            await this.onBoarding();
+          }
+        }
+      }
+    } catch (_0x2ce0ea) {
+      throw _0x2ce0ea;
+    }
+  }
+  async ['queryModificaiton']() {
+    try {
+      const _0x1730a2 = Helper.getSession('accounts');
+      const _0x4e9d3e = _0x1730a2.filter(_0x550815 => _0x550815.includes("query"));
+      let _0x14120f = "Your Query Account List :\n \n";
+      for (const _0x2df1eb of _0x4e9d3e) {
+        _0x14120f += _0x1730a2.indexOf(_0x2df1eb) + 0x1 + ". " + _0x2df1eb + "\n";
+      }
+      if (_0x4e9d3e.length == 0x0) {
+        console.log("You dont have any Query Account.");
+        await this.onBoarding();
+      } else {
+        _0x14120f += "\n \nPlease Select Query Account for modification:";
+      }
+      const _0xed51fa = await _0x5c5374.text(_0x14120f);
+      if (_0x4e9d3e[_0xed51fa - 0x1] != undefined) {
+        const _0x856c00 = _0x4e9d3e[_0xed51fa - 0x1];
+        this.accountName = 'accounts/' + _0x856c00;
+        const _0xa4b877 = "Old Query : " + Helper.readQueryFile(this.accountName + "/query.txt") + "\n \nPlease Enter New Query ";
+        const _0x1c2eb9 = await _0x5c5374.text(_0xa4b877);
+        await Helper.saveQueryFile(this.accountName, _0x1c2eb9);
+        await Helper.delay(0xbb8);
+        await this.onBoarding();
+      } else {
+        console.error("Invalid input, Please try again");
+        await this.queryModificaiton();
+      }
+    } catch (_0x21ea65) {
+      throw _0x21ea65;
+    }
+  }
+  async ["sessionCreation"]() {
+    try {
+      if (Config.TELEGRAM_APP_ID == undefined || Config.TELEGRAM_APP_HASH == undefined) {
+        throw new Error("Please configure your TELEGRAM_APP_ID and TELEGRAM_APP_HASH first");
+      }
+      const _0x43fd30 = Helper.getSession("accounts");
+      let _0x53d3ee = "Your Account List :\n \n";
+      for (const _0x5def9b of _0x43fd30) {
+        _0x53d3ee += _0x43fd30.indexOf(_0x5def9b) + 0x1 + ". " + _0x5def9b + "\n";
+      }
+      if (_0x43fd30.length == 0x0) {
+        _0x53d3ee += "<empty> \n \nPlease enter Session Name :";
+      } else {
+        _0x53d3ee += "\n \nYou already have sessions, cancel(CTRL+C) or create new Session :";
+      }
+      const _0x1f5acb = await _0x5c5374.text(_0x53d3ee);
+      this.accountName = Helper.createDir("sessions-" + _0x1f5acb);
+      await this.useSession(this.accountName);
+      await this.disconnect();
+      _0x761eb8.info("Session " + this.accountName + " - Created");
+      console.log("Session " + _0x1f5acb + " - Created, Please Restart The Bot Again");
+      this.storeSession.save();
+      await Helper.delay(0xbb8);
+      process.exit();
+    } catch (_0x4247ed) {
+      throw _0x4247ed;
+    }
+  }
+  async ["queryCreation"]() {
+    try {
+      const _0x5c16e6 = Helper.getSession("accounts");
+      let _0x3184be = "Your Account List :\n \n";
+      for (const _0x3689bb of _0x5c16e6) {
+        _0x3184be += _0x5c16e6.indexOf(_0x3689bb) + 0x1 + ". " + _0x3689bb + "\n";
+      }
+      if (_0x5c16e6.length == 0x0) {
+        _0x3184be += "<empty> \n \nPlease enter Account Name :";
+      } else {
+        _0x3184be += "\n \nYou already have Account, cancel(CTRL+C) or create new Account :";
+      }
+      const _0x1580db = await _0x5c5374.text(_0x3184be);
+      this.accountName = Helper.createDir("query-" + _0x1580db);
+      const _0x53ca0f = await _0x5c5374.text("Please Enter Telegram Query : ");
+      await Helper.saveQueryFile(this.accountName, _0x53ca0f);
+      _0x761eb8.info("Query " + this.accountName + " - Created");
+      console.log("Query " + _0x1580db + " - Created, Please Restart The Bot Again");
+      await Helper.delay(0xbb8);
+      process.exit();
+    } catch (_0x19465e) {
+      throw _0x19465e;
+    }
+  }
+  async ['accountType']() {
+    try {
+      const _0x59a2cd = Helper.getSession('accounts');
+      let _0x590a0b = "Your Account List :\n \n";
+      if (_0x59a2cd.length > 0x0) {
+        for (const _0x1f6ce4 of _0x59a2cd) {
+          _0x590a0b += _0x59a2cd.indexOf(_0x1f6ce4) + 0x1 + ". " + _0x1f6ce4 + "\n";
+        }
+      } else {
+        _0x590a0b += "<empty>\n";
+      }
+      _0x590a0b += "\n \nAvailable Account Type: \n1. Session \n2. Query\n \nPlease Entery Your Choice : ";
+      const _0x100fac = await _0x5c5374.text(_0x590a0b);
+      if (_0x100fac == 0x1) {
+        await this.sessionCreation();
+      } else if (_0x100fac == 0x2) {
+        await this.queryCreation();
+      } else {
+        console.log("Invalid Input");
+        await this.accountType();
+      }
+    } catch (_0x3d2229) {
+      throw _0x3d2229;
+    }
+  }
+  async ["useSession"](_0xe5669c, _0x16b305) {
+    try {
+      this.proxy = _0x16b305;
+      const _0x196e2e = {
+        'connectionRetries': 0x5
+      };
+      if (this.proxy) {
+        _0x196e2e.agent = new HttpsProxyAgent(this.proxy);
+      }
+      this.storeSession = new StoreSession(_0xe5669c);
+      this.client = new TelegramClient(this.storeSession, Config.TELEGRAM_APP_ID, Config.TELEGRAM_APP_HASH, _0x196e2e);
+      this.client.setLogLevel(LogLevel.ERROR);
+      this.storeSession.save();
+      await this.client.start({
+        'phoneNumber': async () => await _0x5c5374.text("Enter your Telegram Phone Number ?"),
+        'password': async () => await _0x5c5374.text("Enter your Telegram Password?"),
+        'phoneCode': async () => await _0x5c5374.text("Enter your Telegram Verification Code ?"),
+        'onError': _0x112eff => {
+          console.log(_0x112eff.message);
+        }
+      });
+    } catch (_0x59c7fa) {
+      throw _0x59c7fa;
+    }
+  }
+  async ["resolvePeer"](_0x23142b) {
+    try {
+      _0x761eb8.info("Session " + this.session + " - Resolving Peer");
+      while (this.peer == undefined) {
+        try {
+          this.peer = await this.client.getEntity(this.bot);
+          break;
+        } catch (_0x279d70) {
+          if (_0x279d70 instanceof FloodWaitError) {
+            const _0x4ed025 = _0x279d70.seconds;
+            _0x761eb8.warn(this.client.session.serverAddress + " | FloodWait " + _0x279d70);
+            _0x761eb8.info(this.client.session.serverAddress + " | Sleep " + _0x4ed025 + 's');
+            await Helper.delay(_0x4ed025 * 0x3e8, _0x23142b, this.client.session.serverAddress + " | FloodWait " + _0x279d70);
+          } else {
+            throw _0x279d70;
+          }
+        }
+      }
+    } catch (_0x22254f) {
+      throw _0x22254f;
+    }
+  }
+  async ["disconnect"]() {
+    await this.client.disconnect();
+    await this.client.destroy();
+    this.peer = undefined;
+    this.accountName = undefined;
+  }
+  async ["initWebView"](_0x3c5f6a) {
+    try {
+      const _0x382266 = await this.client.invoke(new Api.messages.RequestAppWebView({
+        'peer': this.bot,
+        'app': new Api.InputBotAppShortName({
+          'botId': await this.client.getInputEntity(this.bot),
+          'shortName': 'VanaDataHero'
+        }),
+        'writeAllowed': true,
+        'platform': "android",
+        'startParam': Helper.creator,
+        'compact': true
+      }));
+      _0x761eb8.info("Session " + this.session + " - Webview Connected");
+      return Helper.getQueryFromUrl(_0x382266.url);
+    } catch (_0x670280) {
+      throw _0x670280;
+    }
+  }
+}
